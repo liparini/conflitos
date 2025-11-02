@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tratativa de Conflitos nas Escolas Estaduais de Minas Gerais</title>
+<style>
+  body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(90deg, #005fa3, #0099cc);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+  }
+  .tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem;
+    cursor: pointer;
+    background: #f0f7ff;
+    border: none;
+    font-weight: bold;
+    color: #005fa3;
+    transition: all 0.3s ease;
+    min-width: 120px;
+  }
+  .tab-button.active {
+    background: #005fa3;
+    color: #fff;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  h2 span.icon {
+    margin-right: 0.5rem;
+  }
+  h3 {
+    margin-top: 1rem;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Cores por categoria */
+  .gestao {
+    background: #e6f0fa;
+    border-left: 6px solid #005fa3;
+  }
+  .pedagogico {
+    background: #e8f7ea;
+    border-left: 6px solid #28a745;
+  }
+  .apoio {
+    background: #fff8e1;
+    border-left: 6px solid #ffc107;
+  }
+
+  .exemplo {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+
+  .ref {
+    background: #f0f7ff;
+    border-left: 4px solid #0077cc;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+  }
+  .citacao {
+    font-style: italic;
+    color: #444;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    .tab-button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .exemplo {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    section {
+      padding: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.3rem;
+    }
+    .tab-button {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+    .exemplo {
+      font-size: 0.85rem;
+      padding: 0.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tratativa de Conflitos nas Escolas Estaduais de Minas Gerais</h1>
+</header>
+
+<main>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('conflitos')">Tratativa de Conflitos</button>
+    <button class="tab-button" onclick="showTab('geral')">Outras Responsabilidades</button>
+  </div>
+
+  <!-- Aba 1: Tratativa de Conflitos -->
+  <div id="conflitos" class="tab-content active">
+    <section class="pedagogico">
+      <h2><span class="icon">👩‍🏫</span> Professor</h2>
+      <ul>
+        <li>Intervir em brigas ou discussões;</li>
+        <li>Preservar integridade física e emocional dos alunos;</li>
+        <li>Registrar ocorrências e comunicar à equipe gestora;</li>
+        <li>Promover reflexões pedagógicas sobre convivência e respeito.</li>
+      </ul>
+      <p class="citacao">Base legal: Lei nº 7.109/1977 e Resolução SEE nº 2.197/2012</p>
+    </section>
+
+    <section class="pedagogico">
+      <h2><span class="icon">🎯</span> Especialista em Educação Básica</h2>
+      <ul>
+        <li>Escutar as partes envolvidas;</li>
+        <li>Propor soluções educativas de mediação;</li>
+        <li>Encaminhar casos graves à direção escolar;</li>
+        <li>Auxiliar professores e famílias na prevenção de conflitos.</li>
+      </ul>
+    </section>
+
+    <section class="gestao">
+      <h2><span class="icon">🏫</span> Direção Escolar</h2>
+      <ul>
+        <li>Aplicar medidas administrativas quando necessário;</li>
+        <li>Convocar responsáveis e registrar oficialmente ocorrências;</li>
+        <li>Encaminhar casos graves a órgãos competentes;</li>
+        <li>Garantir proteção e bem-estar da comunidade escolar.</li>
+      </ul>
+    </section>
+
+    <section class="apoio">
+      <h2><span class="icon">🧑‍🏫</span> Professor de Apoio à Inclusão</h2>
+      <p>Atua junto ao professor regente, assegurando suporte pedagógico, social e emocional aos alunos com deficiência ou necessidades especiais.</p>
+      <ul>
+        <li>Intervir em conflitos envolvendo alunos com deficiência ou transtornos globais;</li>
+        <li>Promover diálogo e empatia entre alunos;</li>
+        <li>Auxiliar na reorganização de atividades pós-conflito;</li>
+        <li>Registrar ocorrências e repassar à gestão escolar.</li>
+      </ul>
+
+      <h3>Exemplos Didáticos:</h3>
+      <div class="exemplo">
+        <strong>Exemplo 1:</strong> Aluno com autismo é excluído. Professor de apoio propõe atividade inclusiva em grupo.
+      </div>
+      <div class="exemplo">
+        <strong>Exemplo 2:</strong> Aluno com deficiência auditiva não acompanha a explicação. Professor de apoio adapta material visual.
+      </div>
+      <div class="exemplo">
+        <strong>Exemplo 3:</strong> Conflito verbal entre aluno com TDAH e colega. Professor de apoio aplica técnicas de autorregulação.
+      </div>
+    </section>
+
+    <section class="ref">
+      <h3>📚 Legislação sobre tratativa de conflitos</h3>
+      <ul>
+        <li>Lei nº 7.109/1977 – Estatuto do Magistério de Minas Gerais</li>
+        <li>Resolução SEE nº 2.197/2012 – Organização das escolas estaduais</li>
+        <li>Resolução SEE nº 4.104/2019 – Gestão escolar</li>
+        <li>Lei nº 23.750/2020 – Estrutura da Educação Estadual</li>
+        <li>Resolução SEE nº 4.297/2020 – Educação Inclusiva</li>
+        <li>Lei nº 13.146/2015 – Lei Brasileira de Inclusão</li>
+        <li>Estatuto da Criança e do Adolescente (Lei nº 8.069/1990)</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Aba 2: Outras Responsabilidades -->
+  <div id="geral" class="tab-content">
+    <section class="pedagogico">
+      <h2><span class="icon">👩‍🏫</span> Professor</h2>
+      <ul>
+        <li>Planejar e ministrar aulas de acordo com currículo;</li>
+        <li>Participar de conselhos de classe e reuniões pedagógicas;</li>
+        <li>Registrar frequência e desempenho;</li>
+        <li>Promover práticas inclusivas e democráticas.</li>
+      </ul>
+    </section>
+
+    <section class="apoio">
+      <h2><span class="icon">🧑‍🏫</span> Professor de Apoio à Inclusão</h2>
+      <ul>
+        <li>Adaptar atividades e avaliações para alunos com deficiência;</li>
+        <li>Promover autonomia e protagonismo do estudante;</li>
+        <li>Atuar como elo entre escola, família e equipe multiprofissional;</li>
+        <li>Orientar colegas sobre diversidade e inclusão;</li>
+        <li>Participar de reuniões de planejamento pedagógico e avaliação.</li>
+      </ul>
+    </section>
+
+    <section class="pedagogico">
+      <h2><span class="icon">🎯</span> Especialista em Educação Básica</h2>
+      <ul>
+          <li>Coordenar o planejamento das aulas da escola;</li>
+          <li>Acompanhar como os alunos estão aprendendo;</li>
+          <li>Ajudar os professores com técnicas de ensino;</li>
+          <li>Organizar treinamentos e formações para a equipe;</li>
+          <li>Orientar professores na resolução de problemas pedagógicos;</li>
+          <li>Apoiar o desenvolvimento das atividades educacionais da escola.</li>
+      </ul>
+    </section>
+
+    <section class="gestao">
+      <h2><span class="icon">🏫</span> Direção Escolar</h2>
+      <ul>
+        <li>Gestão administrativa e financeira;</li>
+        <li>Supervisão pedagógica;</li>
+        <li>Gestão disciplinar;</li>
+        <li>Relação com órgãos externos e comunidade escolar.</li>
+      </ul>
+    </section>
+
+    <section class="gestao">
+      <h2><span class="icon">🧰</span> Demais Servidores</h2>
+      <ul>
+        <li><strong>ATE:</strong> Apoiar atividades pedagógicas e administrativas;</li>
+        <li><strong>ASB:</strong> Limpeza, conservação e apoio físico aos alunos;</li>
+        <li><strong>Secretário:</strong> Gerir documentação, históricos e sistemas escolares;</li>
+        <li><strong>Inspetor:</strong> Fiscalizar cumprimento de normas e orientar direção e professores.</li>
+      </ul>
+    </section>
+
+    <section class="ref">
+      <h3>📘 Legislação Geral de Atribuições</h3>
+      <ul>
+        <li>Lei nº 7.109/1977 – Estatuto do Magistério</li>
+        <li>Lei nº 23.750/2020 – Estrutura da Educação Estadual</li>
+        <li>Lei nº 15.293/2004 – Quadro de servidores da Educação Básica</li>
+        <li>Resolução SEE nº 2.197/2012 – Organização das escolas estaduais</li>
+        <li>Resolução SEE nº 4.104/2019 – Gestão escolar e atribuições</li>
+        <li>Resolução SEE nº 4.297/2020 – Educação inclusiva e professor de apoio</li>
+        <li>Lei nº 13.146/2015 – Lei Brasileira de Inclusão</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<script>
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
